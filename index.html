@@ -8,17 +8,18 @@
     <style>
         :root { --brand-orange: #FF8C00; --dark-bg: #000000; --card-bg: #1A1A1A; }
         body { font-family: 'Cairo', sans-serif; background-color: var(--dark-bg); color: #fff; margin: 0; padding: 0; line-height: 1.6; }
-        .container { max-width: 500px; margin: auto; padding: 20px; border: 1px solid #333; }
-        .header { text-align: center; padding-bottom: 20px; border-bottom: 2px solid var(--brand-orange); }
-        .logo-img { max-width: 180px; height: auto; border-radius: 10px; margin-bottom: 10px; border: 1px solid var(--brand-orange); }
-        .header h1 { color: var(--brand-orange); margin: 0; font-size: 2.2rem; }
+        .container { max-width: 500px; margin: auto; padding: 20px; }
+        
+        /* تنسيق اللوجو كـ "شكل" بدون يافطة */
+        .header { text-align: center; padding-bottom: 20px; }
+        .logo-img { max-width: 200px; height: auto; margin-bottom: 10px; display: block; margin-left: auto; margin-right: auto; }
+        .header h1 { color: var(--brand-orange); margin: 0; font-size: 2.2rem; display: none; /* مخفي لأن اللوجو فيه الاسم */ }
         
         .section-header { text-align: center; margin: 25px 0 15px; }
-        .section-header h2 { color: var(--brand-orange); font-size: 1.5rem; margin-bottom: 5px; }
         .main-price { background: var(--brand-orange); color: #000; padding: 5px 20px; border-radius: 20px; font-weight: bold; display: inline-block; font-size: 1.1rem; }
 
         .menu-list { list-style: none; padding: 0; margin: 20px 0; }
-        .menu-list li { background: var(--card-bg); padding: 12px 20px; margin-bottom: 8px; border-radius: 8px; border-right: 4px solid var(--brand-orange); font-size: 1.1rem; }
+        .menu-list li { background: var(--card-bg); padding: 12px 20px; margin-bottom: 8px; border-radius: 8px; border-right: 4px solid var(--brand-orange); font-size: 1.1rem; text-align: right; }
         
         .small-note { font-size: 0.85rem; color: #888; text-align: center; margin-top: -10px; margin-bottom: 20px; }
         
@@ -33,39 +34,38 @@
 
 <div class="container">
     <div class="header">
-        <img src="logo.jpg" alt="لوجو ساعة غدا" class="logo-img" onerror="this.style.display='none'">
-        <h1>ساعة غدا</h1> [cite: 2]
+        <img src="logo.jpg" alt="ساعة غدا" class="logo-img" onerror="this.style.display='none'">
     </div>
 
     <div class="section-header">
-        <div class="main-price">سعر أي وجبة ١٤٩ جنيه فقط</div> 
+        <div class="main-price">سعر أي وجبة ١٤٩ جنيه فقط</div>
     </div>
 
     <ul class="menu-list">
-        <li>١. أرز + طبخ اليوم + شوربة + دجاج</li> [cite: 3]
-        <li>٢. أرز + طبخ اليوم + شوربة + لحم</li> [cite: 3]
-        <li>٣. مكرونة بشاميل + كفتة بالطحينة + شوربة</li> [cite: 4]
-        <li>٤. محشي مشكل + لحم + شوربة</li> [cite: 4]
-        <li>٥. محشي مشكل + دجاج + شوربة</li> [cite: 4]
+        <li>١. أرز + طبخ اليوم + شوربة + دجاج</li>
+        <li>٢. أرز + طبخ اليوم + شوربة + لحم</li>
+        <li>٣. مكرونة بشاميل + كفتة بالطحينة + شوربة</li>
+        <li>٤. محشي مشكل + لحم + شوربة</li>
+        <li>٥. محشي مشكل + دجاج + شوربة</li>
     </ul>
 
-    <p class="small-note">جميع الوجبات تقدم مع خبز وسلطة خضراء</p> 
+    <p class="small-note">جميع الوجبات تقدم مع خبز وسلطة خضراء</p>
 
-    <div class="promo-text">وجبات اقتصادية أكثر وأكثر</div> [cite: 7]
+    <div class="promo-text">وجبات اقتصادية أكثر وأكثر</div>
     
     <div class="section-header">
-        <div class="main-price">سعر وجبة ريحني ١١٩ جنيه فقط</div> [cite: 8]
+        <div class="main-price">سعر وجبة ريحني ١١٩ جنيه فقط</div>
     </div>
 
     <ul class="menu-list">
-        <li>وجبة ريحني ١ : مكرونة + بانيه أو شيش + خبز وسلطة</li> [cite: 8]
-        <li>وجبة ريحني ٢ : مكرونة + كبدة إسكندراني + خبز وسلطة</li> [cite: 8]
-        <li>وجبة ريحني ٣ : مسقعة باللحمة + مكرونة + خبز وسلطة</li> [cite: 8]
+        <li>وجبة ريحني ١ : مكرونة + بانيه أو شيش + خبز وسلطة</li>
+        <li>وجبة ريحني ٢ : مكرونة + كبدة إسكندراني + خبز وسلطة</li>
+        <li>وجبة ريحني ٣ : مسقعة باللحمة + مكرونة + خبز وسلطة</li>
     </ul>
 
     <div class="footer">
-        <span class="phone">01003738187</span> [cite: 9]
-        <span class="delivery">"التوصيل مجاناً"</span> [cite: 9]
+        <span class="phone">01003738187</span>
+        <span class="delivery">"التوصيل مجاناً"</span>
     </div>
 </div>
 
