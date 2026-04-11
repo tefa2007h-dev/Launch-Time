@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منيو ساعة غدا</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --brand-orange: #f39c12; /* اللون البرتقالي من اللوجو */
+            --dark-bg: #121212;
+            --card-bg: #1e1e1e;
+        }
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: var(--dark-bg);
+            color: #fff;
+            margin: 0; padding: 0;
+        }
+        .container { max-width: 600px; margin: auto; padding: 20px; }
+        .header { text-align: center; padding: 30px 10px; border-bottom: 3px solid var(--brand-orange); background: #000; }
+        .header h1 { color: var(--brand-orange); margin: 10px 0; font-size: 2.2rem; }
+        .header p { color: #ccc; font-size: 1.1rem; }
+        
+        .section-title {
+            background: var(--brand-orange);
+            color: #000;
+            padding: 8px 15px;
+            border-radius: 5px;
+            margin: 30px 0 15px;
+            font-weight: bold;
+            display: inline-block;
+        }
+        .menu-item {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 12px;
+            border: 1px solid #333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .item-info h3 { margin: 0; font-size: 1.1rem; color: var(--brand-orange); }
+        .item-info p { margin: 5px 0 0; font-size: 0.85rem; color: #bbb; }
+        .price { font-weight: bold; font-size: 1.2rem; color: #fff; min-width: 80px; text-align: left; }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            border-top: 1px solid #333;
+            background: #000;
+        }
+        .delivery { font-size: 1.3rem; color: var(--brand-orange); font-weight: bold; }
+        
+        /* خاص بالتحويل لـ PDF عند الطباعة */
+        @media print {
+            .no-print { display: none; }
+            body { background-color: #fff; color: #000; }
+            .menu-item { border: 1px solid #000; background: #fff; }
+            .item-info h3, .price, .section-title, .header h1 { color: #000 !important; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>ساعة غدا [cite: 2]</h1>
+        <p>أكل بيتي.. بطعم زمان [cite: 2]</p>
+    </div>
+
+    <div class="section-title">الوجبات الرئيسية (149 جنيه) [cite: 3, 6]</div>
+    
+    <div class="menu-item">
+        <div class="item-info">
+            <h3>وجبة دجاج [cite: 3]</h3>
+            <p>أرز + طبخ اليوم + شوربة [cite: 3]</p>
+        </div>
+        <div class="price">١٤٩ ج [cite: 6]</div>
+    </div>
+
+    <div class="menu-item">
+        <div class="item-info">
+            <h3>وجبة لحم [cite: 3]</h3>
+            <p>أرز + طبخ اليوم + شوربة [cite: 3]</p>
+        </div>
+        <div class="price">١٤٩ ج [cite: 6]</div>
+    </div>
+
+    <div class="menu-item">
+        <div class="item-info">
+            <h3>وجبة مكرونة بشاميل [cite: 4]</h3>
+            <p>كفتة بالطحينة + شوربة [cite: 4]</p>
+        </div>
+        <div class="price">١٤٩ ج [cite: 6]</div>
+    </div>
+
+    <div class="menu-item">
+        <div class="item-info">
+            <h3>وجبة محشي مشكل (لحم) [cite: 4]</h3>
+            <p>لحم + شوربة [cite: 4]</p>
+        </div>
+        <div class="price">١٤٩ ج [cite: 6]</div>
+    </div>
+
+    <div class="menu-item">
+        <div class="item-info">
+            <h3>وجبة محشي مشكل (دجاج) [cite: 4]</h3>
+            <p>دجاج + شوربة [cite: 4]</p>
+        </div>
+        <div class="price">١٤٩ ج [cite: 6]</div>
+    </div>
+
+    <p style="font-size: 0.8rem; color: #888;">* جميع الوجبات تقدم مع خبز وسلطة خضراء [cite: 5]</p>
+
+    <div class="section-title">وجبات ريحني (119 جنيه) [cite: 7, 8]</div>
+
+    <div class="menu-item">
+        <div class="item-info">
+            <h3>وجبة ريحني ١ [cite: 8]</h3>
+            <p>مكرونة + (بانيه أو شيش) + خبز وسلطة [cite: 8]</p>
+        </div>
+        <div class="price">١١٩ ج [cite: 8]</div>
+    </div>
+
+    <div class="menu-item">
+        <div class="item-info">
+            <h3>وجبة ريحني ٢ [cite: 8]</h3>
+            <p>مكرونة + كبدة إسكندراني + خبز وسلطة [cite: 8]</p>
+        </div>
+        <div class="price">١١٩ ج [cite: 8]</div>
+    </div>
+
+    <div class="footer">
+        <div class="delivery">الدليفري: 01003738187 [cite: 9]</div>
+        <p>التوصيل مجاناً [cite: 9]</p>
+        <button class="no-print" onclick="window.print()" style="margin-top: 10px; padding: 10px; cursor: pointer;">تحميل المنيو PDF</button>
+    </div>
+</div>
+
+</body>
+</html>
