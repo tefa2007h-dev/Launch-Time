@@ -7,26 +7,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
     <style>
         :root { --brand-orange: #FF8C00; --dark-bg: #000000; --card-bg: #1A1A1A; }
-        body { font-family: 'Cairo', sans-serif; background-color: var(--dark-bg); color: #fff; margin: 0; padding: 0; line-height: 1.6; }
-        .container { max-width: 550px; margin: auto; padding: 10px; border: 1px solid #333; }
+        body { font-family: 'Cairo', sans-serif; background-color: var(--dark-bg); color: #fff; margin: 0; padding: 0; line-height: 1.4; }
+        .container { max-width: 500px; margin: auto; padding: 10px; }
         
-        /* تنسيق اللوجو بالعرض وكبير جداً */
-        .header { text-align: center; padding-bottom: 20px; }
-        .logo-img { width: 100%; max-width: 530px; /* ليفرش بعرض الكونتينر */ height: auto; display: block; margin: 0 auto; border: none; padding: 0; background: none; }
+        /* اللوجو بالعرض وكبير جداً */
+        .header { text-align: center; padding-bottom: 15px; }
+        .logo-img { width: 100%; max-width: 480px; height: auto; display: block; margin: 0 auto; }
         
-        .section-header { text-align: center; margin: 25px 0 15px; }
+        .section-header { text-align: center; margin: 15px 0 10px; }
         .main-price { background: var(--brand-orange); color: #000; padding: 5px 20px; border-radius: 20px; font-weight: bold; display: inline-block; font-size: 1.1rem; }
 
-        .menu-list { list-style: none; padding: 0; margin: 20px 0; }
-        .menu-list li { background: var(--card-bg); padding: 12px 20px; margin-bottom: 8px; border-radius: 8px; border-right: 4px solid var(--brand-orange); font-size: 1.1rem; text-align: right; }
+        .menu-list { list-style: none; padding: 0; margin: 10px 0; }
+        .menu-list li { background: var(--card-bg); padding: 12px 20px; margin-bottom: 6px; border-radius: 8px; border-right: 4px solid var(--brand-orange); font-size: 1.05rem; text-align: right; }
         
-        .small-note { font-size: 0.85rem; color: #888; text-align: center; margin-top: -10px; margin-bottom: 20px; }
+        .small-note { font-size: 0.85rem; color: #888; text-align: center; margin-top: -5px; margin-bottom: 15px; }
         
-        .promo-text { text-align: center; color: var(--brand-orange); font-weight: bold; font-size: 1.3rem; margin: 35px 0 10px; border-top: 1px solid #333; padding-top: 20px; }
+        .promo-text { text-align: center; color: var(--brand-orange); font-weight: bold; font-size: 1.3rem; margin: 25px 0 5px; border-top: 1px solid #333; padding-top: 15px; }
 
-        .footer { text-align: center; padding: 25px; background: #000; border: 2px solid var(--brand-orange); border-radius: 15px; margin-top: 30px; }
+        .footer { text-align: center; padding: 20px; background: #000; border: 2px solid var(--brand-orange); border-radius: 15px; margin-top: 20px; }
         .footer .phone { font-size: 1.8rem; color: var(--brand-orange); font-weight: bold; display: block; margin-bottom: 5px; }
         .footer .delivery { color: #fff; font-size: 1.1rem; font-weight: bold; }
+
+        @media print {
+            body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            .container { padding: 0; margin: 0 auto; }
+        }
     </style>
 </head>
 <body>
@@ -41,11 +46,9 @@
     </div>
 
     <ul class="menu-list">
-        <li>١. أرز + طبخ اليوم + شوربة + دجاج</li>
-        <li>٢. أرز + طبخ اليوم + شوربة + لحم</li>
-        <li>٣. مكرونة بشاميل + كفتة بالطحينة + شوربة</li>
-        <li>٤. محشي مشكل + لحم + شوربة</li>
-        <li>٥. محشي مشكل + دجاج + شوربة</li>
+        <li>وجبة ١ : أرز + طبخ اليوم + شوربة + دجاج</li>
+        <li>وجبة ٢ : مكرونة بشاميل + كفتة بالطحينة + شوربة</li>
+        <li>وجبة ٣ : محشي مشكل + دجاج + شوربة</li>
     </ul>
 
     <p class="small-note">جميع الوجبات تقدم مع خبز وسلطة خضراء</p>
@@ -53,13 +56,13 @@
     <div class="promo-text">وجبات اقتصادية أكثر وأكثر</div>
     
     <div class="section-header">
-        <div class="main-price">سعر وجبة ريحني ١١٩ جنيه فقط</div>
+        <div class="main-price">سعر الوجبة ١١٩ جنيه فقط</div>
     </div>
 
     <ul class="menu-list">
-        <li>وجبة ريحني ١ : مكرونة + بانيه أو شيش + خبز وسلطة</li>
-        <li>وجبة ريحني ٢ : مكرونة + كبدة إسكندراني + خبز وسلطة</li>
-        <li>وجبة ريحني ٣ : مسقعة باللحمة + مكرونة + خبز وسلطة</li>
+        <li>وجبة ٤ : مكرونة + بانيه أو شيش + خبز وسلطة</li>
+        <li>وجبة ٥ : مكرونة + كبدة إسكندراني + خبز وسلطة</li>
+        <li>وجبة ٦ : كبدة إسكندراني + مكرونة + خبز وسلطة</li>
     </ul>
 
     <div class="footer">
