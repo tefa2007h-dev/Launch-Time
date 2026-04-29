@@ -3,141 +3,146 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>ساعة غدا</title>
 
 <style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0d0d0d;
-  color: white;
+
+body{
+  margin:0;
+  font-family: Arial;
+  background:#0b0b0b;
+  color:white;
 }
 
-.container {
-  max-width: 600px;
-  margin: auto;
-  padding: 20px;
+.container{
+  max-width:600px;
+  margin:auto;
+  padding:20px;
 }
 
 /* HEADER */
-.header {
-  text-align: center;
-  margin-bottom: 30px;
+.header{
+  text-align:center;
+  margin-bottom:25px;
 }
 
-.logo {
-  width: 90px;
-  margin-bottom: 10px;
+.logo{
+  width:100px;
+  margin-bottom:10px;
 }
 
-.header h1 {
-  color: #ffa726;
-  margin: 5px 0;
-  font-size: 32px;
+h1{
+  color:#ff9f1c;
+  font-size:34px;
+  margin:5px 0;
+  text-shadow:0 0 10px #ff9f1c;
 }
 
-.header p {
-  color: #bbb;
-  font-size: 14px;
+.tagline{
+  color:#ccc;
+  font-size:14px;
 }
 
-/* MENU */
-.menu {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+/* ITEMS */
+.item{
+  background:#1a1a1a;
+  margin:12px 0;
+  padding:15px;
+  border-radius:14px;
+  border-right:6px solid #ff9f1c;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
 }
 
-.item {
-  background: #1a1a1a;
-  padding: 15px;
-  border-radius: 12px;
-  border-right: 5px solid #ffa726;
-  transition: 0.3s;
+.text{
+  font-size:15px;
 }
 
-.item:hover {
-  transform: scale(1.02);
+/* السعر شمال */
+.price{
+  color:#ff9f1c;
+  font-weight:bold;
+  min-width:80px;
+  text-align:left;
 }
 
-.item h3 {
-  margin: 0;
-  font-size: 16px;
-}
-
-.price {
-  margin-top: 6px;
-  color: #ffa726;
-  font-weight: bold;
-  text-align: left; /* السعر على الشمال */
+/* SECTION */
+.section-title{
+  text-align:center;
+  margin:30px 0 10px;
+  color:#ff9f1c;
+  font-weight:bold;
 }
 
 /* FOOTER */
-.footer {
-  margin-top: 30px;
-  text-align: center;
-  background: #1a1a1a;
-  padding: 15px;
-  border-radius: 12px;
-  color: #ffa726;
-  font-size: 20px;
-  font-weight: bold;
+.footer{
+  margin-top:30px;
+  padding:15px;
+  text-align:center;
+  border:2px solid #ff9f1c;
+  border-radius:15px;
+  color:#ff9f1c;
+  font-size:20px;
+  font-weight:bold;
 }
-</style>
 
+</style>
 </head>
+
 <body>
 
 <div class="container">
 
-  <div class="header">
-    <img src="logo.png" class="logo">
-    <h1>ساعة غدا</h1>
-    <p>أكل بيتي... بطعم زمان ❤️</p>
-  </div>
+<div class="header">
+  <img src="logo.png" class="logo">
+  <h1>ساعة غدا</h1>
+  <div class="tagline">أكل بيتي... بطعم زمان ❤️</div>
+</div>
 
-  <div class="menu">
+<!-- الوجبات الأساسية -->
+<div class="item">
+  <div class="text">أرز + طبيخ اليوم + شوربة + ربع فرخة</div>
+  <div class="price">130 جنيه</div>
+</div>
 
-    <div class="item">
-      <h3>محشي مشكل + ربع فرخة + ملوخية</h3>
-      <div class="price">150 جنيه</div>
-    </div>
+<div class="item">
+  <div class="text">أرز + داوود باشا بالبطاطس + شوربة</div>
+  <div class="price">130 جنيه</div>
+</div>
 
-    <div class="item">
-      <h3>مكرونة بشاميل + شوربة</h3>
-      <div class="price">140 جنيه</div>
-    </div>
+<div class="item">
+  <div class="text">مكرونة بشاميل + كفتة بالطحنية + شوربة</div>
+  <div class="price">140 جنيه</div>
+</div>
 
-    <div class="item">
-      <h3>أرز + طبيخ اليوم + شوربة + ربع فرخة</h3>
-      <div class="price">130 جنيه</div>
-    </div>
+<div class="item">
+  <div class="text">محشي مشكل + ربع فرخة + ملوخية</div>
+  <div class="price">150 جنيه</div>
+</div>
 
-    <div class="item">
-      <h3>أرز + داوود باشا بالبطاطس + شوربة</h3>
-      <div class="price">110 جنيه</div>
-    </div>
+<!-- اقتصادي -->
+<div class="section-title">وجبات اقتصادية أكثر وأكثر</div>
 
-    <div class="item">
-      <h3>مكرونة/أرز بسمتي + بانيه + خبز ومخلل</h3>
-      <div class="price">110 جنيه</div>
-    </div>
+<div class="item">
+  <div class="text">مكرونة/أرز بسمتي + بانيه + خبز ومخلل</div>
+  <div class="price">130 جنيه</div>
+</div>
 
-    <div class="item">
-      <h3>مكرونة/أرز بسمتي + كبدة إسكندراني + خبز ومخلل</h3>
-      <div class="price">110 جنيه</div>
-    </div>
+<div class="item">
+  <div class="text">مكرونة/أرز بسمتي + كبدة إسكندراني + خبز ومخلل</div>
+  <div class="price">130 جنيه</div>
+</div>
 
-    <div class="item">
-      <h3>مكرونة/أرز بسمتي + شيش + خبز ومخلل</h3>
-      <div class="price">110 جنيه</div>
-    </div>
+<div class="item">
+  <div class="text">مكرونة/أرز بسمتي + شيش + خبز ومخلل</div>
+  <div class="price">130 جنيه</div>
+</div>
 
-  </div>
-
-  <div class="footer">
-    01003738187
-  </div>
+<div class="footer">
+01003738187
+</div>
 
 </div>
 
