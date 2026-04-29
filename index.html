@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>منيو أبويا - الوجبات البيتي</title>
+    <title>منيو ساعة غدا</title>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
-        :root { --yas-red: #E31E24; --yas-yellow: #FFD200; }
+        :root { --main-red: #E31E24; --main-yellow: #FFD200; }
         body { 
             background: #000;
             background-image: 
@@ -17,57 +17,72 @@
             color: #fff; font-family: 'Cairo', sans-serif; margin: 0; padding: 10px; 
         }
         .container { max-width: 600px; margin: auto; }
+        
         .section-title { 
-            color: var(--yas-yellow); text-align: center; margin: 30px 0 15px; 
-            font-size: 1.6rem; font-weight: 900; background: var(--yas-red); 
+            color: var(--main-yellow); text-align: center; margin: 30px 0 15px; 
+            font-size: 1.6rem; font-weight: 900; background: var(--main-red); 
             padding: 5px; border-radius: 8px;
         }
+
         .menu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-        .item-card { background: rgba(20, 20, 20, 0.95); border-radius: 12px; overflow: hidden; text-align: center; border: 1px solid #444; padding-bottom: 10px; }
-        .item-card h3 { font-size: 1.1rem; margin: 15px 0; font-weight: 700; color: #fff; }
-        .price-box { background: var(--yas-red); color: #fff; font-weight: 900; padding: 5px 10px; border-radius: 5px; display: inline-block; margin-bottom: 5px; }
+        
+        .item-card { 
+            background: rgba(20, 20, 20, 0.95); border-radius: 12px; overflow: hidden; 
+            text-align: right; border: 1px solid #444; padding: 15px;
+            display: flex; flex-direction: column; justify-content: space-between;
+            min-height: 100px;
+        }
+
+        .item-card h3 { font-size: 1rem; margin: 0 0 10px 0; font-weight: 700; color: #fff; line-height: 1.4; }
+        
+        .price-tag { 
+            align-self: flex-start; /* السعر يروح شمال */
+            color: var(--main-yellow); font-weight: 900; 
+            font-size: 1.1rem; border-top: 1px solid #333; 
+            width: 100%; pt: 5px; text-align: left;
+        }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h2 class="section-title">وجباتنا المميزة</h2>
+    <h2 class="section-title">الوجبات الرئيسية</h2>
     <div class="menu-grid">
         <div class="item-card">
             <h3>وجبة محشي</h3>
-            <div class="price-box">150 LE</div>
+            <div class="price-tag">150 LE</div>
         </div>
         <div class="item-card">
             <h3>وجبة مكرونة بشاميل</h3>
-            <div class="price-box">140 LE</div>
+            <div class="price-tag">140 LE</div>
         </div>
         <div class="item-card">
             <h3>وجبة أرز وفراخ</h3>
-            <div class="price-box">130 LE</div>
+            <div class="price-tag">130 LE</div>
         </div>
         <div class="item-card">
             <h3>وجبة أرز وكفتة</h3>
-            <div class="price-box">130 LE</div>
+            <div class="price-tag">130 LE</div>
         </div>
     </div>
 
-    <h2 class="section-title">وجبات التوفير</h2>
+    <h2 class="section-title">الوجبات الأخرى</h2>
     <div class="menu-grid">
         <div class="item-card">
             <h3>وجبة خضار</h3>
-            <div class="price-box">110 LE</div>
+            <div class="price-tag">110 LE</div>
         </div>
         <div class="item-card">
             <h3>وجبة نواشف</h3>
-            <div class="price-box">110 LE</div>
+            <div class="price-tag">110 LE</div>
         </div>
         <div class="item-card">
             <h3>وجبة كشري بيتي</h3>
-            <div class="price-box">110 LE</div>
+            <div class="price-tag">110 LE</div>
         </div>
         <div class="item-card">
             <h3>وجبة عدس</h3>
-            <div class="price-box">110 LE</div>
+            <div class="price-tag">110 LE</div>
         </div>
     </div>
 </div>
