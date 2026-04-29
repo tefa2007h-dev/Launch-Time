@@ -6,86 +6,117 @@
     <title>منيو ساعة غدا</title>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
-        :root { --main-red: #E31E24; --main-yellow: #FFD200; }
+        :root { --main-orange: #f39c12; --main-red: #E31E24; }
         body { 
             background: #000;
             background-image: 
                 linear-gradient(to bottom, #000 45%, transparent 50%),
-                linear-gradient(rgba(227, 30, 36, 0.15) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(227, 30, 36, 0.15) 1px, transparent 1px);
+                linear-gradient(rgba(243, 156, 18, 0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(243, 156, 18, 0.1) 1px, transparent 1px);
             background-size: 100% 100%, 25px 25px, 25px 25px;
             color: #fff; font-family: 'Cairo', sans-serif; margin: 0; padding: 10px; 
         }
-        .container { max-width: 600px; margin: auto; }
+        .container { max-width: 600px; margin: auto; text-align: center; }
+        
+        /* اللوجو الجديد */
+        .logo-container { margin: 20px 0; }
+        .logo-img { width: 150px; height: 150px; object-fit: contain; border-radius: 50%; border: 3px solid var(--main-orange); background: #111; padding: 10px; }
         
         .section-title { 
-            color: var(--main-yellow); text-align: center; margin: 30px 0 15px; 
-            font-size: 1.6rem; font-weight: 900; background: var(--main-red); 
-            padding: 5px; border-radius: 8px;
+            color: #000; text-align: center; margin: 30px 0 15px; 
+            font-size: 1.5rem; font-weight: 900; background: var(--main-orange); 
+            padding: 8px; border-radius: 8px; box-shadow: 0 4px #d35400;
         }
 
         .menu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
         
         .item-card { 
-            background: rgba(20, 20, 20, 0.95); border-radius: 12px; overflow: hidden; 
+            background: rgba(30, 30, 30, 0.95); border-radius: 15px; overflow: hidden; 
             text-align: right; border: 1px solid #444; padding: 15px;
             display: flex; flex-direction: column; justify-content: space-between;
-            min-height: 100px;
+            min-height: 120px; border-right: 5px solid var(--main-orange);
         }
 
-        .item-card h3 { font-size: 1rem; margin: 0 0 10px 0; font-weight: 700; color: #fff; line-height: 1.4; }
+        .item-card h3 { font-size: 1rem; margin: 0; font-weight: 700; color: #fff; line-height: 1.5; }
+        .item-card p { font-size: 0.75rem; color: #bbb; margin: 8px 0; }
         
         .price-tag { 
-            align-self: flex-start; /* السعر يروح شمال */
-            color: var(--main-yellow); font-weight: 900; 
-            font-size: 1.1rem; border-top: 1px solid #333; 
-            width: 100%; pt: 5px; text-align: left;
+            align-self: flex-start; 
+            color: var(--main-orange); font-weight: 900; 
+            font-size: 1.2rem; margin-top: 10px;
+            width: 100%; text-align: left;
         }
+
+        .footer-info { margin-top: 30px; padding: 20px; background: rgba(243, 156, 18, 0.1); border-radius: 10px; font-size: 0.9rem; border: 1px dashed var(--main-orange); }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h2 class="section-title">الوجبات الرئيسية</h2>
+    <div class="logo-container">
+        <img src="image_397bfc.jpg" class="logo-img"> 
+    </div>
+
+    <h2 class="section-title">وجبات الأكل البيتي</h2>
+    
     <div class="menu-grid">
         <div class="item-card">
-            <h3>وجبة محشي</h3>
+            <h3>وجبة محشي مشكل</h3>
+            <p>محشي مشكل + ربع فرخة + ملوخية + سلطة + خبز</p>
             <div class="price-tag">150 LE</div>
         </div>
+
         <div class="item-card">
             <h3>وجبة مكرونة بشاميل</h3>
+            <p>مكرونة بشاميل + كفتة بالطحينة + شوربة + سلطة + خبز</p>
             <div class="price-tag">140 LE</div>
         </div>
+
         <div class="item-card">
             <h3>وجبة أرز وفراخ</h3>
+            <p>أرز + طبخ اليوم + شوربة + ربع فرخة + سلطة + خبز</p>
             <div class="price-tag">130 LE</div>
         </div>
+
         <div class="item-card">
-            <h3>وجبة أرز وكفتة</h3>
+            <h3>وجبة أرز وكفتة داوود باشا</h3>
+            <p>أرز + داوود باشا بالبطاطس + شوربة + سلطة + خبز</p>
             <div class="price-tag">130 LE</div>
         </div>
     </div>
 
-    <h2 class="section-title">الوجبات الأخرى</h2>
+    <h2 class="section-title">وجبات اقتصادية</h2>
+    
     <div class="menu-grid">
         <div class="item-card">
-            <h3>وجبة خضار</h3>
+            <h3>وجبة بانيه</h3>
+            <p>مكرونة أو أرز بسمتي + بانيه + مخلل + خبز</p>
             <div class="price-tag">110 LE</div>
         </div>
+
         <div class="item-card">
-            <h3>وجبة نواشف</h3>
+            <h3>وجبة كبدة إسكندراني</h3>
+            <p>مكرونة أو أرز بسمتي + كبدة + مخلل + خبز</p>
             <div class="price-tag">110 LE</div>
         </div>
+
+        <div class="item-card">
+            <h3>وجبة شيش طاووق</h3>
+            <p>مكرونة أو أرز بسمتي + شيش + مخلل + خبز</p>
+            <div class="price-tag">110 LE</div>
+        </div>
+
         <div class="item-card">
             <h3>وجبة كشري بيتي</h3>
+            <p>كشري مصري بيتي + صلصة + دقة + تقلية</p>
             <div class="price-tag">110 LE</div>
         </div>
-        <div class="item-card">
-            <h3>وجبة عدس</h3>
-            <div class="price-tag">110 LE</div>
-        </div>
+    </div>
+
+    <div class="footer-info">
+        <p>جميع الوجبات تقدم مع خبز وسلطة خضراء</p>
+        <p style="color:var(--main-orange); font-weight:bold;">للتواصل: 01003738187</p>
     </div>
 </div>
 
 </body>
-</html>
